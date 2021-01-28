@@ -8,8 +8,10 @@ describe('search google', () => {
 		})
 
 		it('should return facebook as first result', () => {
-
-			expect(true).to.eql(true);
+			
+			// console.log("THIS IS SELECTOR", $(".iUh30"))
+			// console.log("THIS IS GET TEXT", $(".iUh30").getText())
+			expect($(".iUh30").getText()).to.contains("www.facebook.com");
 
 		});
 	})
